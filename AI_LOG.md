@@ -5,3 +5,4 @@ ER diyagramı taslağı, PostgreSQL tablo şeması (sql/schema.sql) ve PowerShel
 ## Ödev 2
 
 sql/schema.sql dosyasına NOT NULL, UNIQUE ve CHECK kısıtlamaları eklendi ve bütünlük kuralları gözden geçirildi.
+
