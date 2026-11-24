@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1195 >>
+stream
+BT
+/F1 10 Tf
+40 755 Td
+14 TL
+(COME381 - Odev 3 Raporu \(odev-3\)) Tj
+T* () Tj
+T* (## 1. Veri ve Sorgular \(`sorgular.sql` & `sorgular_cikti.txt`\)) Tj
+T* (- `kafe` veritaban zerinde Q1Q6 sorgular altrlm ve ham ktlar `odev-3/sorgular_cikti.txt` dosyasna kaydedilmitir.) Tj
+T* (- Sorgular mteri, rn ve sipari kaytlarnn filtrelenmesi, sralanmas ve zetlenmesi amacyla hazrlanmtr.) Tj
+T* () Tj
+T* (## 2. NULL Deneyi \(`null_deneyi.md`\)) Tj
+T* (- `COUNT\(*\)` tm satrlar sayarken `COUNT\(phone\)` yalnzca `NULL` olmayan telefon numaralarn sayar.) Tj
+T* (- `AVG\(age\)` `NULL` ya deerlerini hari tutarak ortalama alrken `SUM\(age\) / COUNT\(*\)` tm satrlar paydaya katar \(`age` deerleri bo/NULL olduunda sonu da `NULL` dnebilir\).) Tj
+T* () Tj
+T* (## 3. Deitir ve Geri Al / Transaction \(`dml.sql` & `dml_cikti.txt`\)) Tj
+T* (- `BEGN` blou iinde `UPDATE product` ile kategori fiyat gncellemesi test edilmitir.) Tj
+T* (- Var olmayan `999` numaral rn iin `NSERT NTO order_item` denemesi `23503` yabanc anahtar \(foreign key\) kst hatas retmitir.) Tj
+T* (- `ROLLBACK` komutu altrlarak yaplan tm deiiklikler geri alnm ve tablo durumu korunmutur; tm ktlar `odev-3/dml_cikti.txt` dosyasna aktarlmtr.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001488 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1558
+%%EOF
