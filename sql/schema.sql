@@ -1,0 +1,4 @@
+﻿CREATE TABLE member (member_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, full_name VARCHAR(120) NOT NULL, email VARCHAR(160) NOT NULL UNIQUE, join_date DATE NOT NULL DEFAULT CURRENT_DATE);
+CREATE TABLE trainer (trainer_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, full_name VARCHAR(120) NOT NULL, specialty VARCHAR(100) NOT NULL, hourly_rate NUMERIC(10, 2) NOT NULL CHECK (hourly_rate >= 0));
+CREATE TABLE group_class (class_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, trainer_id INT NOT NULL REFERENCES trainer(trainer_id), title VARCHAR(120) NOT NULL, session_date DATE NOT NULL, fee NUMERIC(10, 2) NOT NULL CHECK (fee >= 0));
+CREATE TABLE class_enrollment (enrollment_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, member_id INT NOT NULL REFERENCES member(member_id), class_id INT NOT NULL REFERENCES group_class(class_id), enrolled_at DATE NOT NULL DEFAULT CURRENT_DATE, CONSTRAINT uq_member_class UNIQUE (member_id, class_id));
